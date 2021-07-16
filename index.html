@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive pricing component</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet">  
+  <link rel="stylesheet" href="css/style.css" media="all">
+
+  <script defer src="js/pricing.js"></script>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Simple, traffic-based pricing</h1> 
+      <p>Sign-up for our 30-day trial. No credit card required.</p>
+    </header>
+    <form class="card">
+      <div class="pricing">
+        <label for="range" class="page bolded">Pageviews</label>
+        <div class="price"><h2 class="prices">$</h2><p class="month bolded">/month</p></div>
+        <input id="range" type="range" name="range" class="range" min="0" max="100" value="50" step="25">
+        <div class="toggle-container">
+          <p id="monthly" class="monthly">Monthly Billing</p>
+          <input type="checkbox" aria-labelledby="#monthly">
+          <p id="yearly" class="yearly">Yearly Billing <mark class="discount">25%</mark></p>
+        </div>
+      </div>
+      <div class="accept">
+        <ul>
+          <li><p>Unlimited websites</p></li>
+          <li><p>100% data ownership</p></li>
+          <li><p>Email reports</p></li>
+        </ul>
+        <button>Start my trial</button>
+      </div>    
+    </form>  
+  </main>
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">purplesunk</a>.
+    </div>
+  </footer>
+</body>
+</html>
